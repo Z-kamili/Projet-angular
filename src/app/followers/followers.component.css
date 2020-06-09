@@ -1,0 +1,13 @@
+.followers{
+    display: flex;
+    margin: 10px 40px;
+}
+.image img{
+    width: 150px;
+    border-radius: 50%;
+}
+.followers-info{
+    margin: 10px 30px;
+    font-size: 16px;
+    
+}

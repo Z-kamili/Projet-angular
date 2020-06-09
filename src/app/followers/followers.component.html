@@ -1,0 +1,27 @@
+<div class="followers" *ngFor="let post of posts">
+    <div class="image">
+        <img src="{{post.avatar_url}}">
+    </div> 
+  <div class="followers-info">
+    <p>{{post.login}}</p>
+    <a [routerLink]="['/followers-id',post.id]"
+     [queryParams]="{ page: 1, type:post.type,var: 'val'}" >{{post.html_url}}</a>
+    <!-- <p>{{post.html_url}}</p> -->
+  </div>  
+
+</div>
+<!-- <ul class="list-group">
+    <li class="list-group-item" *ngFor="let post of posts">
+
+        <h4>{{post.login}}</h4>
+         <p>{{post.body}}</p> -->
+        <!-- <div align="right"> -->
+
+            <!-- <button  type="button" class="btn btn-warning">Edit</button>
+            <button  type="button" class="btn btn-danger">Delete</button> -->
+           
+
+        <!-- </div>
+    </li>
+</ul>  -->
+
